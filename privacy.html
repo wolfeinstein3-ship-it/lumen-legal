@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lumen — privacy policy</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <header class="site">
+    <a class="brand" href="./">Lumen</a>
+    <nav>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+      <a href="support.html">Support</a>
+    </nav>
+  </header>
+
+  <h1>Privacy policy</h1>
+  <p class="meta">Effective 19 October 2026 · applies to the Lumen app and this site</p>
+
+  <div class="card">
+    <p><strong>The short version.</strong> Lumen does not require an account. Your
+    reading and progress stay on your device. There are no ads, no analytics, no
+    tracking, and no sale of personal data. Sync and purchases are not enabled in
+    this build; the sections below describe what will happen if you choose them in
+    a future build.</p>
+  </div>
+
+  <h2>Who is responsible</h2>
+  <p>Lumen is published by an independent developer. For privacy questions, use the
+  <a href="support.html">support page</a> and mark the request “Privacy”.</p>
+
+  <h2>Data that stays on your device</h2>
+  <p>In the current build the app stores the following locally, using the operating
+  system’s secure storage (Keychain / Keystore) or the browser’s local storage:</p>
+  <ul>
+    <li>the goal you choose during onboarding;</li>
+    <li>your reading progress: the plan day, streak, last-read date, and completed days;</li>
+    <li>your reminder preference and the notification schedule;</li>
+    <li>a cached premium-entitlement record, if the premium layer is enabled in a later build.</li>
+  </ul>
+  <p>This information is not transmitted to us in the current build. You can export it
+  or reset it at any time in <em>Settings → Your data</em>.</p>
+
+  <h2>Notifications</h2>
+  <p>Daily reminders are scheduled by your device, not by a server. The reminder text
+  is chosen on the device from a small set of written variants; it is not personal
+  data sent to us. You can turn reminders off in Settings or in the operating
+  system’s notification settings.</p>
+
+  <h2>No advertising, analytics, or tracking</h2>
+  <p>The app contains no advertising SDKs, no analytics SDKs, no cross-app tracking,
+  and no fingerprinting. We do not sell or rent personal data.</p>
+
+  <h2>Sync and accounts (not enabled in this build)</h2>
+  <p>If you choose to connect sync in a future build, we will use Supabase to store:
+  your email address, a user identifier, and the content you choose to sync
+  (highlights, notes, bookmarks, reading log, plans, and settings). Row-level security
+  policies restrict every row to its owner. You will be able to export your data and
+  delete your account in the app; deleting the account deletes the synced rows.</p>
+
+  <h2>Purchases (not enabled in this build)</h2>
+  <p>If premium purchases are enabled in a future build, they will be processed by
+  Apple’s App Store or Google Play, with RevenueCat used to verify entitlements. We
+  will not receive your payment-card details. The stores’ own privacy policies apply
+  to the purchase.</p>
+
+  <h2>Service providers</h2>
+  <ul>
+    <li><strong>Expo / EAS</strong> builds and delivers the app and its updates.</li>
+    <li><strong>Supabase</strong> provides sync and authentication, only if you enable sync.</li>
+    <li><strong>RevenueCat</strong> verifies purchases, only if purchases are enabled.</li>
+    <li><strong>GitHub Pages</strong> hosts this policy and the support pages.</li>
+  </ul>
+  <p>These providers process data on our behalf or as independent controllers under
+  their own terms. We do not authorise them to sell your data.</p>
+
+  <h2>Retention</h2>
+  <p>Local data remains until you reset it in Settings or uninstall the app. If sync
+  is enabled, synced data remains until you delete your account, after which it is
+  removed from the active database. Support issues remain public until resolved and
+  can be removed on request.</p>
+
+  <h2>Security</h2>
+  <p>The app uses HTTPS for any network request. The public Supabase key is designed
+  to be public; access is controlled by row-level security, not by hiding a key.
+  Service-role keys are never shipped in the app.</p>
+
+  <h2>Children</h2>
+  <p>Lumen is not directed at children under 13. The current build has no accounts
+  and collects no personal data. If you believe a child has provided personal data
+  through a future sync feature, contact us and we will delete it.</p>
+
+  <h2>Your rights</h2>
+  <p>Depending on where you live, you may have the right to access, correct, export,
+  delete, restrict, or object to the processing of your personal data. In the current
+  build you can exercise the data ones directly in Settings: export produces a JSON
+  file on your device, and reset erases the local reading state. For anything else,
+  use the support page. You may also complain to your local data-protection
+  authority.</p>
+
+  <h2>Changes</h2>
+  <p>If a future build changes what is collected — for example when sync or purchases
+  are enabled — this page will be updated before that build ships, and the effective
+  date will change.</p>
+
+  <p class="trust">Lumen is a Bible reader first. The text is never the product, and
+  your reading is not the price.</p>
+</main>
+</body>
+</html>
